@@ -3,11 +3,17 @@
 /* gobal font */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
 /* Cuerpo */
+html{
+    height: 100%;
+}
 body {
     padding: auto;
     margin: 5%;
+    height: 100%;
     font-family: 'Josefin Sans', sans-serif;
-    background: black;
+    /* degradado implementado con - cssgradient.io */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,17,18,1) 35%, rgba(0,212,255,1) 100%);
 }
 .title {
     font-family: 'Train One', sans-serif;
