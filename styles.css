@@ -90,3 +90,25 @@ ul {
 .daoko {
     grid-area: daoko;
 }
+/* contenido historia */
+.grid-container2 {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "mushoku historia mushokuRoxy";
+}
+.mushoku {
+    grid-area: mushoku;
+}
+.historia {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    grid-area: historia;
+}
+.mushokuRoxy {
+    grid-area: mushokuRoxy;
+}
