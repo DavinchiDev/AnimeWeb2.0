@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+body {
+    background: black;
+}
+.title {
+    font-family: 'Train One', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 5px;
+    line-height: 35px;
+}
+.title h1:hover{
+    color: lightseagreen;
+}
+.title h2{
+    font-size: 80px;
+}
+.title h2:hover {
+    color: lightseagreen;
+    text-decoration: underline solid lightseagreen;
+}
+/* barra de navegacion */
+.container {
+    width: 90%;
+    margin: auto;
+}
+.nav-main {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.nav-main ul {
+    display: flex;
+}
+.nav-main ul li {
+    padding: 125px;
+}
