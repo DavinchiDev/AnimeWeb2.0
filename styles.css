@@ -8,13 +8,13 @@ html{
 }
 body {
     padding: auto;
-    margin: 5%;
     height: 100%;
     font-family: 'Josefin Sans', sans-serif;
     /* degradado implementado con - cssgradient.io */
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,17,18,1) 35%, rgba(0,212,255,1) 100%);
 }
+/*Titulo*/
 .title {
     font-family: 'Train One', sans-serif;
     text-align: center;
@@ -35,13 +35,14 @@ body {
     text-decoration: underline solid lightseagreen;
 }
 /* barra de navegacion */
-.container {
+.container-menu {
     width: 90%;
     margin: auto;
     padding: 10px;
     line-height: 35px;
 }
 a:hover {
+    color: white;
     text-decoration:underline solid lightseagreen;
 }
 a {
@@ -60,6 +61,7 @@ ul {
     height: 60px;
 }
 .nav-main ul {
+    color: white;
     display: flex;
     font-family: 'Josefin Sans', sans-serif;
     padding: auto;
@@ -69,9 +71,12 @@ ul {
     padding: 125px;
     font-family: 'Josefin Sans', sans-serif;
     padding: auto;
+    text-decoration: none;
 }
 /* contenido */
 .grid-container {
+    margin-left: 75px;
+    margin-right: 75px;
     display: grid;
     grid-template-columns: 471px 1fr;
     grid-template-rows: 1fr;
@@ -95,6 +100,7 @@ ul {
     align-items: center;
     justify-items: center;
     display: grid;
+    font-family: 'Josefin Sans', sans-serif;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -105,10 +111,120 @@ ul {
 }
 .historia {
     font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
     text-align: center;
     grid-area: historia;
 }
 .mushokuRoxy {
     grid-area: mushokuRoxy;
+}
+.notice {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+/*formulario*/
+.all-form-container {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    display: grid;
+    padding: auto;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 550px;
+    margin-right: 550px;
+    align-content: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 10px;
+}
+/* burbujas */
+/* Efectos de burbuja*/
+.burbuja {
+    background: #fff;
+    border-radius: 50%;
+    opacity: .3;
+    position: absolute;
+    bottom: 0;
+    animation: burbujas 3s linear infinite;
+}
+.burbuja:nth-child(1){
+    width: 80px; height: 80px;
+    left: 90%;
+    animation-duration: 6s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px; height: 100px;
+    left: 35%;
+    animation-duration: 5s;
+}
+.burbuja:nth-child(3){
+    width: 25px; height: 25px;
+    left: 10%;
+    animation-duration: 5s;
+}
+.burbuja:nth-child(4){
+    width: 75px; height: 75px;
+    left: 1%;
+    animation-duration: 7s;
+}
+.burbuja:nth-child(5){
+    width: 66px; height: 66px;
+    left: 30%;
+    animation-duration: 9s;
+}
+.burbuja:nth-child(6){
+    width: 90px; height: 90px;
+    left: 60%;
+    animation-duration: 10s;
+}
+.burbuja:nth-child(7){
+    width: 90px; height: 90px;
+    left: 50%;
+    animation-duration: 9s;
+}
+.burbuja:nth-child(8){
+    width: 125px; height: 125px;
+    left: 75%;
+    animation-duration: 8s;
+}
+.burbuja:nth-child(9){
+    width: 20px; height: 20px;
+    left: 80%;
+    animation-duration: 13s;
+}
+.burbuja:nth-child(9){
+    width: 40px; height: 40px;
+    left: 25%;
+    animation-duration: 13s;
+}
+.burbuja:nth-child(10){
+    width: 15px; height: 15px;
+    left: 33%;
+    animation-duration: 15s;
+}
+.burbuja:nth-child(11){
+    width: 50px; height: 50px;
+    left: 20%;
+    animation-duration: 11s;
+}
+@keyframes burbujas {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
 }
