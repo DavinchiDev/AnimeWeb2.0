@@ -1,0 +1,56 @@
+/* title font */
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+/* gobal font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+/* Cuerpo */
+body {
+    padding: auto;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    /* degradado implementado con - cssgradient.io */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,17,18,1) 35%, rgba(0,212,255,1) 100%);
+}
+.title {
+    color: white;
+    text-align: center;
+}
+/* barra de navegacion */
+.container-menu {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    line-height: 35px;
+}
+a:hover {
+    color: white;
+    text-decoration:underline solid lightseagreen;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.nav-main {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    height: 60px;
+}
+.nav-main ul {
+    color: white;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: auto;
+}
+.nav-main ul li {
+    color: white;
+    padding: 125px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: auto;
+    text-decoration: none;
+}
